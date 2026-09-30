@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Your Car - DriveEase</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🚗 DriveEase
+        </div>
+
+        <nav>
+
+            <a href="../index.html">Home</a>
+            <a href="cars.html">Cars</a>
+            <a href="about.html">About</a>
+             <a href="pages/contact.html">Contact</a>
+            <a href="#">Login</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Booking Page -->
+
+    <main>
+
+        <section class="booking-page">
+
+            <div class="booking-heading">
+
+                <p>RESERVE YOUR RIDE</p>
+
+                <h1>Book Your Car</h1>
+
+                <span>
+                    Enter your trip details to continue.
+                </span>
+
+            </div>
+
+
+            <div class="booking-container">
+
+
+                <!-- Booking Form -->
+
+                <div class="booking-form">
+
+                    <h2>Trip Details</h2>
+
+
+                    <div class="form-group">
+
+                        <label for="pickup-location">
+                            Pickup Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="pickup-location"
+                            placeholder="Enter pickup location"
+                        >
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="pickup-date">
+                                Pickup Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="pickup-date"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="return-date">
+                                Return Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="return-date"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="pickup-time">
+                                Pickup Time
+                            </label>
+
+                            <input
+                                type="time"
+                                id="pickup-time"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="return-time">
+                                Return Time
+                            </label>
+
+                            <input
+                                type="time"
+                                id="return-time"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="special-request">
+                            Special Request
+                        </label>
+
+                        <textarea
+                            id="special-request"
+                            placeholder="Any additional request..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="booking-note">
+
+                        <strong>Before you continue</strong>
+
+                        <p>
+                            Make sure your pickup and return details are correct.
+                        </p>
+
+                    </div>
+
+                    <button class="continue-btn" id="continue-payment">
+    Continue to Payment
+</button>
+
+                </div>
+
+
+                <!-- Booking Summary -->
+
+                <div class="booking-summary">
+
+                    <h2>Booking Summary</h2>
+
+
+                    <div class="summary-car">
+
+                        <div class="summary-car-image">
+                            🚗
+                        </div>
+
+                        <div>
+
+                            <h3 id="booking-car-name">
+                                Maruti Swift
+                            </h3>
+
+                            <p id="booking-car-type">
+                                Hatchback
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="summary-line">
+
+                        <span>Price per day</span>
+
+                        <strong id="booking-price">
+                            ₹1,500
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-line">
+
+                        <span>Rental days</span>
+
+                        <strong id="rental-days">
+                            1 day
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-divider"></div>
+
+
+                    <div class="summary-total">
+
+                        <span>Total</span>
+
+                        <strong id="booking-total">
+                            ₹1,500
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

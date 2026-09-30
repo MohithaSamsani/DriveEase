@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Bookings - DriveEase</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🚗 DriveEase
+        </div>
+
+        <nav>
+
+            <a href="../index.html">Home</a>
+
+            <a href="cars.html">Cars</a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="login.html" id="login-link">Login</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- My Bookings -->
+
+    <main>
+
+        <section class="my-bookings-page">
+
+            <div class="bookings-heading">
+
+                <p>YOUR TRIPS</p>
+
+                <h1>My Bookings</h1>
+
+                <span>
+                    View your current and previous rental bookings.
+                </span>
+
+            </div>
+
+
+            <div class="booking-list" id="booking-list">
+
+
+                <!-- Current Booking -->
+
+                <div class="user-booking-card">
+
+
+                    <!-- Booking Top Section -->
+
+                    <div class="user-booking-top">
+
+
+                        <!-- Car Image -->
+
+                        <div
+                            class="booking-car-image"
+                            id="my-booking-image"
+                        >
+                            🚗
+                        </div>
+
+
+                        <!-- Car Information -->
+
+                        <div class="booking-car-info">
+
+                            <span class="booking-status confirmed">
+                                Confirmed
+                            </span>
+
+                            <h2 id="my-booking-car">
+                                Maruti Swift
+                            </h2>
+
+                        </div>
+
+
+                        <!-- Booking ID -->
+
+                        <div class="booking-id">
+
+                            <span>
+                                Booking ID
+                            </span>
+
+                            <strong id="my-booking-id">
+                                DRV-2026-1001
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Booking Details -->
+
+                    <div class="user-booking-details">
+
+
+                        <div>
+
+                            <span>
+                                Pickup Date
+                            </span>
+
+                            <strong id="my-pickup-date">
+                                Not selected
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Return Date
+                            </span>
+
+                            <strong id="my-return-date">
+                                Not selected
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Rental Days
+                            </span>
+
+                            <strong id="my-rental-days">
+                                1 day
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Total
+                            </span>
+
+                            <strong id="my-total">
+                                ₹1,500
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Booking Actions -->
+
+                    <div class="user-booking-actions">
+
+<button
+    class="view-booking-btn"
+    id="view-booking-btn"
+>
+    View Details
+</button>
+                        <button class="cancel-booking-btn">
+                            Cancel Booking
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

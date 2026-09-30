@@ -1,0 +1,574 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Car Rental System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🚗 DriveEase
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="pages/cars.html">Cars</a>
+
+            <a href="pages/about.html">About</a>
+            <a href="pages/contact.html">Contact</a>
+
+             <a href="pages/login.html" id="login-link">Login</a>            
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Find Your Perfect Ride</h1>
+
+            <p>
+                Comfortable, reliable and affordable cars for every journey.
+            </p>
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="home-car-search"
+        placeholder="Search for a car..."
+    >
+
+    <button
+        type="button"
+        id="home-search-btn"
+    >
+        Search
+    </button>
+
+</div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Popular Cars -->
+
+    <section class="popular-cars">
+
+        <div class="section-heading">
+
+            <h2>Popular Cars</h2>
+
+            <p>
+                Choose from some of our most popular rides.
+            </p>
+
+        </div>
+
+
+        <div class="car-container">
+
+
+            <!-- Maruti Swift -->
+
+            <div class="car-card">
+
+                
+                 <div class="car-image">
+              <img src="images/swift.jpg" alt="Maruti Swift">
+</div>               
+ <div class="car-info">
+
+                    <h3>Maruti Swift</h3>
+
+                    <p class="car-type">
+                        Hatchback
+                    </p>
+
+                    <div class="car-details">
+
+                        <span>5 Seats</span>
+                        <span>Petrol</span>
+                        <span>Manual</span>
+
+                    </div>
+
+                    <p class="car-price">
+                        ₹1,500 / day
+                    </p>
+
+                    <a
+                        href="pages/car-details.html?car=swift"
+                        class="details-btn"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hyundai Creta -->
+
+            <div class="car-card">
+
+             <div class="car-image">
+    <img src="images/creta.jpg" alt="Hyundai Creta">
+</div>
+
+                <div class="car-info">
+
+                    <h3>Hyundai Creta</h3>
+
+                    <p class="car-type">
+                        SUV
+                    </p>
+
+                    <div class="car-details">
+
+                        <span>5 Seats</span>
+                        <span>Petrol</span>
+                        <span>Automatic</span>
+
+                    </div>
+
+                    <p class="car-price">
+                        ₹2,500 / day
+                    </p>
+
+                    <a
+                        href="pages/car-details.html?car=creta"
+                        class="details-btn"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Honda City -->
+
+            <div class="car-card">
+
+             <div class="car-image">
+    <img src="images/city.jpg" alt="Honda City">
+</div>
+
+                <div class="car-info">
+
+                    <h3>Honda City</h3>
+
+                    <p class="car-type">
+                        Sedan
+                    </p>
+
+                    <div class="car-details">
+
+                        <span>5 Seats</span>
+                        <span>Petrol</span>
+                        <span>Automatic</span>
+
+                    </div>
+
+                    <p class="car-price">
+                        ₹2,200 / day
+                    </p>
+
+                    <a
+                        href="pages/car-details.html?car=city"
+                        class="details-btn"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Why Choose Us -->
+
+    <section class="why-us">
+
+        <div class="section-heading">
+
+            <h2>Why Choose Us?</h2>
+
+            <p>
+                Everything you need for a comfortable rental experience.
+            </p>
+
+        </div>
+
+
+        <div class="features-container">
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🚗
+                </div>
+
+                <h3>
+                    Wide Choice of Cars
+                </h3>
+
+                <p>
+                    Choose from different types of cars for different needs
+                    and journeys.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    💰
+                </div>
+
+                <h3>
+                    Affordable Prices
+                </h3>
+
+                <p>
+                    Find suitable cars with simple and transparent rental
+                    prices.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🛡️
+                </div>
+
+                <h3>
+                    Safe & Reliable
+                </h3>
+
+                <p>
+                    We aim to provide a smooth and reliable car rental
+                    experience.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Drive Green -->
+
+    <section class="green-section">
+
+        <div class="green-content">
+
+            <p class="green-label">
+                🌱 SMARTER TRAVEL
+            </p>
+
+            <h2>
+                Drive Green
+            </h2>
+
+            <p class="green-text">
+                Choose eco-friendly vehicles and make every journey
+                a little kinder to the environment.
+            </p>
+
+
+            <div class="green-features">
+
+
+                <div class="green-feature">
+
+                    <span>🚙</span>
+
+                    <h3>
+                        Eco-Friendly Cars
+                    </h3>
+
+                    <p>
+                        Explore vehicles designed with sustainability in mind.
+                    </p>
+
+                </div>
+
+
+                <div class="green-feature">
+
+                    <span>♻️</span>
+
+                    <h3>
+                        Better Efficiency
+                    </h3>
+
+                    <p>
+                        Choose options that help you travel efficiently.
+                    </p>
+
+                </div>
+
+
+                <div class="green-feature">
+
+                    <span>🌿</span>
+
+                    <h3>
+                        Lower Emissions
+                    </h3>
+
+                    <p>
+                        View useful emission information before you book.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="pages/cars.html"
+                class="green-btn"
+            >
+                Explore Eco Cars
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- How It Works -->
+
+    <section class="how-it-works">
+
+        <div class="section-heading">
+
+            <h2>
+                How It Works
+            </h2>
+
+            <p>
+                Rent your car in three simple steps.
+            </p>
+
+        </div>
+
+
+        <div class="steps-container">
+
+
+            <div class="step-card">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <div class="step-icon">
+                    🚗
+                </div>
+
+                <h3>
+                    Choose a Car
+                </h3>
+
+                <p>
+                    Browse our cars and choose the one that suits your journey.
+                </p>
+
+            </div>
+
+
+            <div class="step-card">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <div class="step-icon">
+                    📅
+                </div>
+
+                <h3>
+                    Book Your Car
+                </h3>
+
+                <p>
+                    Select your dates and provide the details needed for your booking.
+                </p>
+
+            </div>
+
+
+            <div class="step-card">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <div class="step-icon">
+                    🛣️
+                </div>
+
+                <h3>
+                    Enjoy Your Trip
+                </h3>
+
+                <p>
+                    Pick up your car and enjoy a comfortable journey.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Call To Action -->
+
+    <section class="cta-section">
+
+        <div class="cta-content">
+
+            <p class="cta-label">
+                YOUR JOURNEY STARTS HERE
+            </p>
+
+            <h2>
+                Ready for Your Journey?
+            </h2>
+
+            <p>
+                Find a car that fits your plans and start your journey with ease.
+            </p>
+
+            <a
+                href="pages/cars.html"
+                class="cta-btn"
+            >
+                Explore Cars
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-column">
+
+                <div class="footer-logo">
+                    🚗 DriveEase
+                </div>
+
+                <p>
+                    Simple, convenient and reliable car rental for every journey.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="pages/cars.html">
+                    Cars
+                </a>
+                <a href="pages/about.html">About</a>
+                <a href="pages/contact.html">Contact</a>
+                
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    Email: support@driveease.com
+                </p>
+
+                <p>
+                    Phone: +91 98765 43210
+                </p>
+
+                <p>
+                    India
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 DriveEase. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+```

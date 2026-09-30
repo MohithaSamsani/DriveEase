@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payment - DriveEase</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🚗 DriveEase
+        </div>
+
+        <nav>
+
+            <a href="../index.html">Home</a>
+
+            <a href="cars.html">Cars</a>
+
+            <a href="about.html">About</a>
+            <a href="pages/contact.html">Contact</a>
+            <a href="#">Login</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Payment Page -->
+
+    <main>
+
+        <section class="payment-page">
+
+            <div class="payment-heading">
+
+                <p>SECURE CHECKOUT</p>
+
+                <h1>Complete Your Payment</h1>
+
+                <span>
+                    Review your booking and select a payment method.
+                </span>
+
+            </div>
+
+
+            <div class="payment-container">
+
+
+                <!-- Payment Methods -->
+
+                <div class="payment-form">
+
+                    <h2>Payment Method</h2>
+
+
+                    <div class="payment-methods">
+
+                        <label class="payment-method">
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="card"
+                                checked
+                            >
+
+                            <span>💳 Card</span>
+
+                        </label>
+
+
+                        <label class="payment-method">
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="upi"
+                            >
+
+                            <span>📱 UPI</span>
+
+                        </label>
+
+
+                        <label class="payment-method">
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="cash"
+                            >
+
+                            <span>💵 Pay at Pickup</span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Card Details -->
+
+                    <div class="card-details-form">
+
+                        <div class="form-group">
+
+                            <label for="card-name">
+                                Name on Card
+                            </label>
+
+                            <input
+                                type="text"
+                                id="card-name"
+                                placeholder="Enter name on card"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="card-number">
+                                Card Number
+                            </label>
+
+                            <input
+                                type="text"
+                                id="card-number"
+                                placeholder="XXXX XXXX XXXX XXXX"
+                                maxlength="19"
+                            >
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="expiry">
+                                    Expiry Date
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="expiry"
+                                    placeholder="MM/YY"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="cvv">
+                                    CVV
+                                </label>
+
+                                <input
+                                    type="password"
+                                    id="cvv"
+                                    placeholder="CVV"
+                                    maxlength="3"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="payment-security">
+
+                        <strong>🔒 Secure Payment</strong>
+
+                        <p>
+                            This is a project payment interface.
+                            No real payment will be processed.
+                        </p>
+
+                    </div>
+
+
+<button class="pay-btn" id="pay-now">
+    Pay Now
+</button>
+                </div>
+
+
+                <!-- Payment Summary -->
+
+                <div class="payment-summary">
+
+                    <h2>Booking Summary</h2>
+
+
+                    <div class="payment-car">
+
+                        <div class="payment-car-image">
+                            🚗
+                        </div>
+
+                        <div>
+
+                            <h3 id="payment-car-name">
+                                Maruti Swift
+                            </h3>
+
+                            <p id="payment-car-type">
+                                Hatchback
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="payment-line">
+
+                        <span>Price per day</span>
+
+                        <strong id="payment-price">
+                            ₹1,500
+                        </strong>
+
+                    </div>
+
+
+                    <div class="payment-line">
+
+                        <span>Rental days</span>
+
+                        <strong id="payment-days">
+                            1 day
+                        </strong>
+
+                    </div>
+
+
+                    <div class="payment-divider"></div>
+
+
+                    <div class="payment-total">
+
+                        <span>Total</span>
+
+                        <strong id="payment-total">
+                            ₹1,500
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

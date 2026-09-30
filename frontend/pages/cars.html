@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cars - DriveEase</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🚗 DriveEase
+        </div>
+
+        <nav>
+
+            <a href="../index.html">Home</a>
+
+            <a href="cars.html">Cars</a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="login.html" id="login-link">Login</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+
+    <main>
+
+        <!-- Cars Header -->
+
+        <section class="cars-header">
+
+            <h1>Find Your Perfect Car</h1>
+
+            <p>
+                Explore our collection and choose a car that suits your journey.
+            </p>
+
+        </section>
+
+
+        <!-- Cars Section -->
+
+        <section class="cars-section">
+
+            <!-- Search -->
+
+            <div class="search-area">
+
+                <input
+                    type="text"
+                    id="car-search"
+                    placeholder="Search by car name or brand..."
+                >
+
+                <button>Search</button>
+
+            </div>
+
+
+            <div class="cars-content">
+
+                <!-- Filters -->
+
+                <div class="filter-area">
+
+                    <div class="filter-heading">
+
+                        <h3>Filters</h3>
+
+                        <button class="clear-filter">
+                            Clear All
+                        </button>
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <label for="car-type">
+                            Car Type
+                        </label>
+
+                        <select id="car-type">
+
+                            <option value="all">
+                                All Types
+                            </option>
+
+                            <option value="suv">
+                                SUV
+                            </option>
+
+                            <option value="sedan">
+                                Sedan
+                            </option>
+
+                            <option value="hatchback">
+                                Hatchback
+                            </option>
+                             <option value="mpv">
+    MPV
+</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <label for="fuel-type">
+                            Fuel Type
+                        </label>
+
+                        <select id="fuel-type">
+
+                            <option value="all">
+                                All Fuels
+                            </option>
+
+                            <option value="petrol">
+                                Petrol
+                            </option>
+
+                            <option value="diesel">
+                                Diesel
+                            </option>
+
+                            <option value="electric">
+                                Electric
+                            </option>
+
+                            <option value="hybrid">
+                                Hybrid
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <label for="transmission">
+                            Transmission
+                        </label>
+
+                        <select id="transmission">
+
+                            <option value="all">
+                                All
+                            </option>
+
+                            <option value="manual">
+                                Manual
+                            </option>
+
+                            <option value="automatic">
+                                Automatic
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <label for="seats">
+                            Seats
+                        </label>
+
+                        <select id="seats">
+
+                            <option value="all">
+                                Any
+                            </option>
+
+                            <option value="4">
+                                4 Seats
+                            </option>
+
+                            <option value="5">
+                                5 Seats
+                            </option>
+
+                            <option value="6">
+                                6 Seats
+                            </option>
+
+                            <option value="7">
+                                7 Seats
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <label for="eco">
+                            Eco-Friendly
+                        </label>
+
+                        <select id="eco">
+
+                            <option value="all">
+                                All Cars
+                            </option>
+
+                            <option value="yes">
+                                Eco-Friendly Only
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Cars List Header -->
+
+                <div class="cars-list-header">
+
+                    <p class="cars-count">
+                        6 cars available
+                    </p>
+
+                    <div class="sort-area">
+
+                        <label for="sort-cars">
+                            Sort by:
+                        </label>
+
+                        <select id="sort-cars">
+
+                            <option value="recommended">
+                                Recommended
+                            </option>
+
+                            <option value="price-low">
+                                Price: Low to High
+                            </option>
+
+                            <option value="price-high">
+                                Price: High to Low
+                            </option>
+
+                            <option value="name">
+                                Name: A to Z
+                            </option>
+
+                        </select>
+
+
+                        <!-- Reset Filters Button -->
+
+                        <button
+                            id="reset-filters"
+                            class="reset-btn"
+                        >
+                            Reset Filters
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Cars List -->
+
+                <div class="cars-list">
+
+
+                    <!-- No Cars Found Message -->
+
+                    <p
+                        id="no-cars-message"
+                        style="
+                            display: none;
+                            text-align: center;
+                            padding: 30px;
+                            font-size: 18px;
+                            width: 100%;
+                        "
+                    >
+                        🚗 No cars found matching your search or filters.
+                    </p>
+
+
+                    <!-- Car 1 - Maruti Swift -->
+
+                    <div class="car-card">
+
+                        <div class="car-image">
+
+                            <img
+                                src="../images/swift.jpg"
+                                alt="Maruti Swift"
+                            >
+
+                        </div>
+
+
+                        <div class="car-info">
+
+                            <div class="car-title-row">
+
+                                <div>
+
+                                    <h3>
+                                        Maruti Swift
+                                    </h3>
+
+                                    <p class="car-type">
+                                        Hatchback
+                                    </p>
+
+                                </div>
+
+                                <span class="availability available">
+                                    Available
+                                </span>
+
+                            </div>
+
+
+                            <div class="car-details">
+
+                                <span>
+                                    5 Seats
+                                </span>
+
+                                <span>
+                                    Petrol
+                                </span>
+
+                                <span>
+                                    Manual
+                                </span>
+
+                            </div>
+
+
+                            <p class="eco-label">
+                                🌱 Fuel Efficient
+                            </p>
+
+
+                            <div class="car-bottom">
+
+                                <p class="car-price">
+                                    ₹1,500 <span>/ day</span>
+                                </p>
+
+
+                                <div class="car-actions">
+
+                                    <a
+                                        href="car-details.html?car=swift"
+                                        class="details-btn"
+                                    >
+                                        View Details
+                                    </a>
+
+                                    <a
+                                        href="booking.html?car=swift"
+                                        class="book-btn"
+                                    >
+                                        Book Now
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Car 2 - Hyundai Creta -->
+
+                    <div class="car-card">
+
+                        <div class="car-image">
+
+                            <img
+                                src="../images/creta.jpg"
+                                alt="Hyundai Creta"
+                            >
+
+                        </div>
+
+
+                        <div class="car-info">
+
+                            <div class="car-title-row">
+
+                                <div>
+
+                                    <h3>
+                                        Hyundai Creta
+                                    </h3>
+
+                                    <p class="car-type">
+                                        SUV
+                                    </p>
+
+                                </div>
+
+                                <span class="availability available">
+                                    Available
+                                </span>
+
+                            </div>
+
+
+                            <div class="car-details">
+
+                                <span>
+                                    5 Seats
+                                </span>
+
+                                <span>
+                                    Petrol
+                                </span>
+
+                                <span>
+                                    Automatic
+                                </span>
+
+                            </div>
+
+
+                            <p class="eco-label">
+                                🌱 Fuel Efficient
+                            </p>
+
+
+                            <div class="car-bottom">
+
+                                <p class="car-price">
+                                    ₹2,500 <span>/ day</span>
+                                </p>
+
+
+                                <div class="car-actions">
+
+                                    <a
+                                        href="car-details.html?car=creta"
+                                        class="details-btn"
+                                    >
+                                        View Details
+                                    </a>
+
+                                    <a
+                                        href="booking.html?car=creta"
+                                        class="book-btn"
+                                    >
+                                        Book Now
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Car 3 - Honda City -->
+
+                    <div class="car-card">
+
+                        <div class="car-image">
+
+                            <img
+                                src="../images/city.jpg"
+                                alt="Honda City"
+                            >
+
+                        </div>
+
+
+                        <div class="car-info">
+
+                            <div class="car-title-row">
+
+                                <div>
+
+                                    <h3>
+                                        Honda City
+                                    </h3>
+
+                                    <p class="car-type">
+                                        Sedan
+                                    </p>
+
+                                </div>
+
+                                <span class="availability rented">
+                                    Rented
+                                </span>
+
+                            </div>
+
+
+                            <div class="car-details">
+
+                                <span>
+                                    5 Seats
+                                </span>
+
+                                <span>
+                                    Petrol
+                                </span>
+
+                                <span>
+                                    Automatic
+                                </span>
+
+                            </div>
+
+
+                            <p class="eco-label">
+                                🌱 Fuel Efficient
+                            </p>
+
+
+                            <div class="car-bottom">
+
+                                <p class="car-price">
+                                    ₹2,200 <span>/ day</span>
+                                </p>
+
+
+                                <div class="car-actions">
+
+                                    <a
+                                        href="car-details.html?car=city"
+                                        class="details-btn"
+                                    >
+                                        View Details
+                                    </a>
+
+                                    <button
+                                        class="book-btn disabled-btn"
+                                        disabled
+                                    >
+                                        Unavailable
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Car 4 - Toyota Innova -->
+
+                    <div class="car-card">
+
+                        <div class="car-image">
+
+                            <img
+                                src="../images/innova.jpg"
+                                alt="Toyota Innova"
+                            >
+
+                        </div>
+
+
+                        <div class="car-info">
+
+                            <div class="car-title-row">
+
+                                <div>
+
+                                    <h3>
+                                        Toyota Innova
+                                    </h3>
+
+                                    <p class="car-type">
+                                        MPV
+                                    </p>
+
+                                </div>
+
+                                <span class="availability available">
+                                    Available
+                                </span>
+
+                            </div>
+
+
+                            <div class="car-details">
+
+                                <span>
+                                    7 Seats
+                                </span>
+
+                                <span>
+                                    Diesel
+                                </span>
+
+                                <span>
+                                    Manual
+                                </span>
+
+                            </div>
+
+
+                            <p class="eco-label">
+                                ⚡ Long Range
+                            </p>
+
+
+                            <div class="car-bottom">
+
+                                <p class="car-price">
+                                    ₹3,000 <span>/ day</span>
+                                </p>
+
+
+                                <div class="car-actions">
+
+                                    <a
+                                        href="car-details.html?car=innova"
+                                        class="details-btn"
+                                    >
+                                        View Details
+                                    </a>
+
+                                    <a
+                                        href="booking.html?car=innova"
+                                        class="book-btn"
+                                    >
+                                        Book Now
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Car 5 - Tata Nexon EV -->
+
+                    <div class="car-card">
+
+                        <div class="car-image">
+
+                            <img
+                                src="../images/nexon-ev.jpg"
+                                alt="Tata Nexon EV"
+                            >
+
+                        </div>
+
+
+                        <div class="car-info">
+
+                            <div class="car-title-row">
+
+                                <div>
+
+                                    <h3>
+                                        Tata Nexon EV
+                                    </h3>
+
+                                    <p class="car-type">
+                                        Electric SUV
+                                    </p>
+
+                                </div>
+
+                                <span class="availability available">
+                                    Available
+                                </span>
+
+                            </div>
+
+
+                            <div class="car-details">
+
+                                <span>
+                                    5 Seats
+                                </span>
+
+                                <span>
+                                    Electric
+                                </span>
+
+                                <span>
+                                    Automatic
+                                </span>
+
+                            </div>
+
+
+                            <p class="eco-label">
+                                🌱 Eco Friendly
+                            </p>
+
+
+                            <div class="car-bottom">
+
+                                <p class="car-price">
+                                    ₹2,800 <span>/ day</span>
+                                </p>
+
+
+                                <div class="car-actions">
+
+                                    <a
+                                        href="car-details.html?car=nexon-ev"
+                                        class="details-btn"
+                                    >
+                                        View Details
+                                    </a>
+
+                                    <a
+                                        href="booking.html?car=nexon-ev"
+                                        class="book-btn"
+                                    >
+                                        Book Now
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Car 6 - Toyota Camry Hybrid -->
+
+                    <div class="car-card">
+
+                        <div class="car-image">
+
+                            <img
+                                src="../images/camry-hybrid.jpg"
+                                alt="Toyota Camry Hybrid"
+                            >
+
+                        </div>
+
+
+                        <div class="car-info">
+
+                            <div class="car-title-row">
+
+                                <div>
+
+                                    <h3>
+                                        Toyota Camry Hybrid
+                                    </h3>
+
+                                    <p class="car-type">
+                                        Sedan
+                                    </p>
+
+                                </div>
+
+                                <span class="availability available">
+                                    Available
+                                </span>
+
+                            </div>
+
+
+                            <div class="car-details">
+
+                                <span>
+                                    5 Seats
+                                </span>
+
+                                <span>
+                                    Hybrid
+                                </span>
+
+                                <span>
+                                    Automatic
+                                </span>
+
+                            </div>
+
+
+                            <p class="eco-label">
+                                🌱 Eco Friendly
+                            </p>
+
+
+                            <div class="car-bottom">
+
+                                <p class="car-price">
+                                    ₹3,500 <span>/ day</span>
+                                </p>
+
+
+                                <div class="car-actions">
+
+                                    <a
+                                        href="car-details.html?car=camry-hybrid"
+                                        class="details-btn"
+                                    >
+                                        View Details
+                                    </a>
+
+                                    <a
+                                        href="booking.html?car=camry-hybrid"
+                                        class="book-btn"
+                                    >
+                                        Book Now
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
